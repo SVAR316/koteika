@@ -1,0 +1,20 @@
+.header {
+  margin-top: 65px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 117px;
+}
+.header a, .header div > a {
+  color: var(--other-text);
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=header.css.map */
