@@ -258,4 +258,39 @@
   background-color: var(--button-bg-color);
 }
 
+.ellipses img {
+  position: absolute;
+}
+.ellipses__first {
+  left: 0;
+  top: 0;
+}
+.ellipses__second {
+  right: 278px;
+  z-index: -1;
+}
+.ellipses__third {
+  left: 0;
+  top: 1440px;
+}
+.ellipses__fourth {
+  right: 0;
+  top: 1700px;
+  z-index: -1;
+}
+.ellipses__fifth {
+  left: 0;
+  top: 3630px;
+  z-index: -1;
+}
+.ellipses__sixth {
+  right: 90px;
+  top: 4279px;
+  z-index: -1;
+}
+.ellipses__seventh {
+  left: 0;
+  top: 5300px;
+}
+
 /*# sourceMappingURL=index.css.map */

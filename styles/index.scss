@@ -295,3 +295,42 @@
     background-color: var(--button-bg-color);
   }
 }
+
+.ellipses{
+  //position: absolute;
+
+  & img{
+    position: absolute;
+  }
+  &__first{
+    left: 0;
+    top: 0;
+  }
+  &__second{
+    right: 278px;
+    z-index: -1;
+  }
+  &__third{
+    left: 0;
+    top: 1440px;
+  }
+  &__fourth{
+    right: 0;
+    top: 1700px;
+    z-index: -1;
+  }
+  &__fifth{
+    left: 0;
+    top: 3630px;
+    z-index: -1;
+  }
+  &__sixth{
+    right: 90px;
+    top: 4279px;
+    z-index: -1;
+  }
+  &__seventh{
+    left: 0;
+    top: 5300px;
+  }
+}
