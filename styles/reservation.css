@@ -77,6 +77,10 @@
     height: 57px;
     border: 2px solid #EEDEA3;
     border-radius: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
   }
 
   .catalog-sort-content-conteyner__number{
@@ -195,4 +199,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.7rem;
+  }
+
+  .ellipses img {
+    position: absolute;
+  }
+
+  .ellipses__first {
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .ellipses__second {
+    right: 1px;
+    top: 230px;
+    z-index: -1;
   }

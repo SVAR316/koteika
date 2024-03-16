@@ -4,6 +4,12 @@
   display: flex;
   align-items: center;
 }
+.footer__ellipse {
+  position: absolute;
+  left: 0;
+  margin-top: 170px;
+  z-index: -1;
+}
 .footer-left {
   display: flex;
   flex-direction: column;
@@ -49,5 +55,3 @@
   position: absolute;
   right: 0;
 }
-
-/*# sourceMappingURL=footer.css.map */

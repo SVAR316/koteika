@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ellipses">
+            <img class="ellipses__first" src="./images/ellipses/form/First.png" alt="ellipse">
+            <img class="ellipses__second" src="./images/ellipses/form/Second.png" alt="ellipse">
+        </div>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <a href="./index.html">Главная</a>
+                <a href="./reservation.html">Бронирование</a>
+                <a>О нас</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <a>
+                Ваш город: Астрахань
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="info-left">
+                <img src="./images/formImg/Leps.png" alt="" class="info-left__image">
+            </div>
+            <div class="info-right">
+                <p class="info-right__title">Введите свои данные</p>
+                <div class="info-right-form">
+                    <div class="info-right-form-date">
+                        <div class="info-right-form-date-content">
+                            <p class="info-right-form-date-content__title">Заезд</p>
+                            <input type="date" name="" id="" class="info-right-form-date-content__date">
+                        </div>
+                        <div class="info-right-form-date-content">
+                            <p class="info-right-form-date-content__title">Выезд</p>
+                            <input type="date" name="" id="" class="info-right-form-date-content__date">
+                        </div>
+                    </div>
+                    <div class="info-right-form-countpeople">
+                        <p class="info-right-form-countpeople__title">Количество гостей</p>
+                        <select name="cars" class="info-right-form-countpeople__select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </div>
+                    <div class="info-right-form-name">
+                        <div class="info-right-form-name-content">
+                            <p class="info-right-form-name-content__title">Ваше имя</p>
+                            <input type="date" name="" id="" class="info-right-form-name-content__input">
+                        </div>
+                        <div class="info-right-form-name-content">
+                            <p class="info-right-form-name-content__title">Кличка питомца</p>
+                            <input type="date" name="" id="" class="info-right-form-name-content__input">
+                        </div>
+                    </div>
+                    <div class="info-right-form-mobile">
+                        <p class="info-right-form-mobile__title">Телефон</p>
+                        <input type="tel" name="" id="" class="info-right-form-mobile__telephone" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+                    </div>
+                    <div class="info-right-form-email">
+                        <p class="info-right-form-email__title">E-mail</p>
+                        <input type="email" name="" id="" class="info-right-form-email__email">
+                    </div>
+                    <div class="info-right-form-accept">
+                        <input type="checkbox" name="" id="" class="info-right-form-accept__chek">
+                        <p class="info-right-form-accept__title"> Я даю согласие на обработку моих <br> персональных данных.
+                        </p>
+                    </div>
+                    <div class="info-right-form-button">
+                        <button class="info-right-form-button__but1" id="openPopup">Забронировать номер</button>
+                        <a href="./reservation.html" class="info-right-form-button__but2">Вернуться в каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup">
+    <img src="./images/formImg/close.png" alt="" id="closePopup" class="closePopup">
+      <p class="textPopup">Ваша заявка успешно <br>
+         отправлена!</p>
+         <img src="./images/ellipses/form/Therd.png" alt="" class="ellipsePup">
+    </div>
+
+<script>
+    let openPopupButton = document.getElementById('openPopup');
+    let closePopupButton = document.getElementById('closePopup');
+    let popup = document.getElementById('popup');
+    let overlay = document.getElementById('overlay');
+  
+    function openPopup() {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+    }
+  
+    function closePopup() {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+
+    openPopupButton.addEventListener('click', openPopup);
+    closePopupButton.addEventListener('click', closePopup);
+  </script>
+</body>
+</html>
