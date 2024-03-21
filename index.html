@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./js/carousel.js"></script>
 </head>
 <body>
 <div class="container">
@@ -101,7 +102,43 @@
 <div class="container">
     <div class="reviews">
         <p class="reviews__title">Отзывы</p>
-        <div class="reviews-cards">
+        <div class="reviews-cards" style="transform: translateX(0px)">
+            <div class="reviews-card">
+                <div class="reviews-card__upper">
+                    <img src="./images/mok/first.png" alt="avatar">
+                    <div>
+                        <p>Татьяна Абрамова</p>
+                        <div>
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+                <p class="reviews-card__desc">Замечательная гостиница для кошек. Суперский персонал. Кошкам комфортно,
+                    просторно, сытно. Не скучает никто - регулярно гуляют, играют, если совместимы характерами. Место,
+                    конечно, сложное, если ехать не на машине. Но это компенсируется всеми плюсами.</p>
+            </div>
+            <div class="reviews-card">
+                <div class="reviews-card__upper">
+                    <img src="./images/mok/second.png" alt="avatar">
+                    <div>
+                        <p>Олег Трофимов</p>
+                        <div>
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                            <img src="./images/common/star.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+                <p class="reviews-card__desc">Отличное место, чтобы оставить питомца и не волноваться. Везде
+                    камеры,можно подключиться в любой момент и убедиться, что всё хорошо. Боксы чистят регулярно, еда и
+                    вода всегда есть. Администратор очень приятная, вежливая.</p>
+            </div>
             <div class="reviews-card">
                 <div class="reviews-card__upper">
                     <img src="./images/mok/first.png" alt="avatar">
@@ -140,8 +177,8 @@
             </div>
         </div>
         <div class="reviews-buttons">
-            <button><img src="images/common/arrowLeft.svg" alt="arrow"></button>
-            <button><img src="./images/common/arrowRight.svg" alt="arrow"></button>
+            <button onclick="prev()"><img src="images/common/arrowLeft.svg" alt="arrow"></button>
+            <button onclick="next()"><img src="./images/common/arrowRight.svg" alt="arrow"></button>
         </div>
     </div>
 </div>

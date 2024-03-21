@@ -126,7 +126,8 @@
   margin-top: 110px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  position: relative;
 }
 .reviews__title {
   font-size: 48px;
@@ -137,9 +138,12 @@
   display: flex;
   gap: 99px;
   margin-top: 53px;
+  width: 300%;
+  transition: all ease 0.5s;
 }
 .reviews-card {
   border-radius: 20px;
+  flex: 1;
   border: 3px solid var(--border-color);
   max-width: 671px;
   padding: 46px 37px 55px 49px;
