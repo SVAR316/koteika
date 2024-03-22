@@ -56,6 +56,8 @@
   --button-bg-color: #36342F;
   --other-text: #352C1B;
   --border-color: #EEE2B7;
+  --first-admin: rgba(248, 228, 159, 1);
+  --second-admin: rgba(240, 206, 141, 1);
 }
 
 *,

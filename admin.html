@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koteika</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/admin.css">
+</head>
+<body>
+<div class="content">
+    <div class="sidebar">
+        <div class="sidebar-upper">
+            <img class="sidebar-upper__image" src="./images/mok/mok.png" alt="image">
+            <p class="sidebar-upper__name">admin</p>
+        </div>
+        <div class="sidebar-down">
+            <button class="sidebar-down__button sidebar__active"><img src="./images/common/firstAdmin.svg" alt="icon">Редактировать
+            </button>
+            <button class="sidebar-down__button"><img src="./images/common/secondAdmin.svg" alt="icon"> Добавить номер
+            </button>
+            <button class="sidebar-down__button"><img src="./images/common/thirdAdmin.svg" alt="icon">Заявки</button>
+            <button class="sidebar-down__button"><img src="./images/common/fourthAdmin.svg" alt="icon">Бронь</button>
+        </div>
+    </div>
+    <div id="number" class="numbers" style="display: none">
+        <p class="numbers__title">Добавление номера</p>
+        <div class="numbers-name">
+            <p>Название:</p>
+            <input>
+        </div>
+        <div class="numbers-content">
+            <div class="numbers-left">
+                <div class="numbers-left__item">
+                    <p>Площадь:</p>
+                    <input>
+                    <p>м²</p>
+                </div>
+                <div class="numbers-left__item">
+                    <p>Высота:</p>
+                    <input>
+                    <p>м</p>
+                </div>
+                <div class="numbers-left__item">
+                    <p>Глубина:</p>
+                    <input>
+                    <p>м</p>
+                </div>
+
+                <div class="numbers-left__photo">
+                    <p>Добавить фото:</p>
+
+                    <button>
+                        <img src="./images/common/secondAdmin.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+            <div class="numbers-right">
+                <p class="numbers-right__title">Услуги (выбрать несколько):</p>
+
+                <div class="numbers-right__items">
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Вентиляция в номере
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Свежая питьевая вода
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Пелёнка
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Уборка номера 2 раза в день
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Игрушка
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Древесный наполнитель
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="numbers__button">
+            Добавить номер
+        </button>
+    </div>
+
+    <div id="editor" class="numbers" style="display: none">
+        <p class="numbers__title">Редактирование номера</p>
+        <div class="numbers-name">
+            <p>Название:</p>
+            <input value="Комфорт для собак">
+        </div>
+        <div class="numbers-content">
+            <div class="numbers-left">
+                <div class="numbers-left__item">
+                    <p>Площадь:</p>
+                    <input value="2,2">
+                    <p>м²</p>
+                </div>
+                <div class="numbers-left__item">
+                    <p>Высота:</p>
+                    <input value="1">
+                    <p>м</p>
+                </div>
+                <div class="numbers-left__item">
+                    <p>Глубина:</p>
+                    <input value="1">
+                    <p>м</p>
+                </div>
+
+                <div class="numbers-left__photo">
+                    <p>Добавить фото:</p>
+
+                    <button style="background-image: url('./images/mok/loadedImage.png'); border:none;">
+                        <img src="./images/common/secondAdmin.svg" alt="icon">
+                    </button>
+                </div>
+            </div>
+            <div class="numbers-right">
+                <p class="numbers-right__title">Услуги (выбрать несколько):</p>
+
+                <div class="numbers-right__items">
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Вентиляция в номере
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Свежая питьевая вода
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Пелёнка
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Уборка номера 2 раза в день
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Игрушка
+                        </option>
+                    </select>
+                    <select class="numbers-right__select">
+                        <option value="Вентиляция в номере">
+                            Древесный наполнитель
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="numbers-buttons">
+            <button class="numbers__button">
+                Изменить номер
+            </button>
+            <button class="numbers__button">
+                Удалить номер
+            </button>
+        </div>
+    </div>
+
+    <div id="bid" style="display: none;" class="bid">
+        <p class="numbers__title">Заявки</p>
+
+        <div class="bid-list">
+            <div class="bid-list__card">
+                <p class="bid-list__title">Комфорт для собаки </p>
+                <p class="bid-list__number">Номер 1</p>
+                <p class="bid-list__other">Дата заезда: 02.04.24</p>
+                <p class="bid-list__other">Дата выезда: 08.04.24</p>
+                <p class="bid-list__other">Статус: ожидание</p>
+                <p class="bid-list__other">Номеров осталось: 2</p>
+
+                <button class="bid-list__accept">Одобрить</button>
+                <button class="bid-list__cancel">Отменить</button>
+            </div>
+            <div class="bid-list__card">
+                <p class="bid-list__title">Комфорт для собаки </p>
+                <p class="bid-list__number">Номер 1</p>
+                <p class="bid-list__other">Дата заезда: 02.04.24</p>
+                <p class="bid-list__other">Дата выезда: 08.04.24</p>
+                <p class="bid-list__other">Статус: ожидание</p>
+                <p class="bid-list__other">Номеров осталось: 2</p>
+
+                <button class="bid-list__accept">Одобрить</button>
+                <button class="bid-list__cancel">Отменить</button>
+            </div>
+            <div class="bid-list__card">
+                <p class="bid-list__title">Комфорт для собаки </p>
+                <p class="bid-list__number">Номер 1</p>
+                <p class="bid-list__other">Дата заезда: 02.04.24</p>
+                <p class="bid-list__other">Дата выезда: 08.04.24</p>
+                <p class="bid-list__other">Статус: ожидание</p>
+                <p class="bid-list__other">Номеров осталось: 2</p>
+
+                <button class="bid-list__accept">Одобрить</button>
+                <button class="bid-list__cancel">Отменить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservation">
+        <p class="reservation__title">Забронированные номера</p>
+
+        <div class="reservation-setting">
+            <div>
+                <p class="reservation-setting__title">Выберите дату</p>
+                <input class="reservation-setting__input" type="date">
+            </div>
+            <div>
+                <p class="reservation-setting__title">Для какого животного?</p>
+                <select class="reservation-setting__select">
+                    <option value="Собака">
+                        Собака
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="reservation-list">
+            <div class="reservation-list__card">
+                <p class="reservation-list__title">Эконом для собаки</p>
+                <p class="reservation-list__number">Номер 1</p>
+                <p class="reservation-list__other">Дата заезда: 02.04.24</p>
+                <p class="reservation-list__other">Дата выезда: 08.04.24</p>
+            </div>
+            <div class="reservation-list__card">
+                <p class="reservation-list__title">Эконом для собаки</p>
+                <p class="reservation-list__number">Номер 1</p>
+                <p class="reservation-list__other">Дата заезда: 02.04.24</p>
+                <p class="reservation-list__other">Дата выезда: 08.04.24</p>
+            </div>
+            <div class="reservation-list__card">
+                <p class="reservation-list__title">Эконом для собаки</p>
+                <p class="reservation-list__number">Номер 1</p>
+                <p class="reservation-list__other">Дата заезда: 02.04.24</p>
+                <p class="reservation-list__other">Дата выезда: 08.04.24</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
