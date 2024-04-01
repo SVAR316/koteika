@@ -17,12 +17,12 @@
             <p class="sidebar-upper__name">admin</p>
         </div>
         <div class="sidebar-down">
-            <button class="sidebar-down__button sidebar__active"><img src="./images/common/firstAdmin.svg" alt="icon">Редактировать
+            <button id="editorButton" onclick="switchPanel(0)" class="sidebar-down__button sidebar__active"><img src="./images/common/firstAdmin.svg" alt="icon">Редактировать
             </button>
-            <button class="sidebar-down__button"><img src="./images/common/secondAdmin.svg" alt="icon"> Добавить номер
+            <button id="numberButton" onclick="switchPanel(1)" class="sidebar-down__button"><img src="./images/common/secondAdmin.svg" alt="icon"> Добавить номер
             </button>
-            <button class="sidebar-down__button"><img src="./images/common/thirdAdmin.svg" alt="icon">Заявки</button>
-            <button class="sidebar-down__button"><img src="./images/common/fourthAdmin.svg" alt="icon">Бронь</button>
+            <button id="reservationButton"  onclick="switchPanel(2)" class="sidebar-down__button"><img src="./images/common/thirdAdmin.svg" alt="icon">Заявки</button>
+            <button id="bidButton" onclick="switchPanel(3)" class="sidebar-down__button"><img src="./images/common/fourthAdmin.svg" alt="icon">Бронь</button>
         </div>
     </div>
     <div id="number" class="numbers" style="display: none">
@@ -99,7 +99,7 @@
         </button>
     </div>
 
-    <div id="editor" class="numbers" style="display: none">
+    <div id="editor" class="numbers" >
         <p class="numbers__title">Редактирование номера</p>
         <div class="numbers-name">
             <p>Название:</p>
@@ -218,7 +218,7 @@
         </div>
     </div>
 
-    <div class="reservation">
+    <div id="reservation" class="reservation" style="display: none">
         <p class="reservation__title">Забронированные номера</p>
 
         <div class="reservation-setting">
@@ -258,5 +258,7 @@
         </div>
     </div>
 </div>
+
+<script src="./js/admin.js"></script>
 </body>
 </html>
